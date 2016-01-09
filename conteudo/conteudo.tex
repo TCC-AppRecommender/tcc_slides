@@ -1,10 +1,10 @@
-\section{What is SOLID?} % (fold)
-\label{sec:what_is_solid_}
+\section{Contextualização} % (fold)
+\label{sec:contextualizacao}
 
 % section what_is_solid_ (end)
 
-\section{S - Single Responsibility Principle } % (fold)
-\label{sec:s}
+\section{Problemática} % (fold)
+\label{sec:problematica}
 
 \begin{frame}
 	\say{\textit{Every class should have responsibility over a single part of the functionality
@@ -30,9 +30,8 @@
 
 % section s (end)
 
-
-\section{O - Open/closed principle} % (fold)
-\label{sec:o}
+\section{Objetivo} % (fold)
+\label{sec:objetivo}
 
 \begin{frame}
 	\say{\textit{Software entities should be open for extension, but closed for modification.}}, \\Meyer, Bertrand
@@ -73,18 +72,41 @@
 
 % section o (end)
 
-\section{L - Liskov Substitution Principle} % (fold)
-\label{sec:l}
+\section{Sistemas de recomendação} % (fold)
+\label{sec:sistemas_recomendacao}
 \begin{frame}
-    \say {\textit{If for each object o1 of type S there is an object o2 of type T such that for all programs P defined in terms of T, the behavior of P is unchanged when o1 is substituted for o2 then S is a subtype of T.}},\\Liskov, Barbara; (1988)
+    \say {\textit{Sistemas de recomendação são ferramentas computacionais e
+técnicas usadas para produzir recomendação de itens úteis a um
+usuário}},\\(MAHMOOD; RICCI, 2009)
 \end{frame}
 
 \begin{frame}
 
 \begin{figure}[h!]
-  % \caption{The Extractor inherited.}
   \centering
-    \includegraphics[width=1\textwidth]{conteudo/LSP}
+    \includegraphics[width=1\textwidth]{figura/recommender_model.eps}
+  \caption{Modelo para criação de um sistema de recomendação personalizado (PICAULT et al., 2011)}
+\end{figure}
+    
+\end{frame}
+
+\begin{frame}
+    Tipos de sistemas de recomendação:
+
+    \begin{itemize}
+        \item Recomendação baseada em conteúdo
+        \item Recomendação colaborativa
+        \item Recomendação híbrida
+        \item Recomendação por contexto
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=1\textwidth]{figura/recomendacao_conteudo.eps}
+  \caption{Fluxo para construção de um sistema de recomendação por conteúdo (LOPS; GEMMIS; SEMERARO, 2011)}
 \end{figure}
     
 \end{frame}
@@ -92,8 +114,8 @@
 
 % section l (end)
 
-\section{I - Interface segregation principle} % (fold)
-\label{sec:i}
+\section{Software escolhido} % (fold)
+\label{sec:software_escolhido}
 \begin{frame}
 	\say {\textit{Client should not be forced to depend on methods it does not use}},\\Martin, Robert(2002)
 \end{frame}
@@ -114,41 +136,63 @@
 \end{frame}
 % section i (end)
 
-\section{D - Dependency Inversion Principle} % (fold)
+\section{Contexto temporal no Debian} % (fold)
 \label{sec:d}
 
 \begin{frame}
-    \say{\textit{Depend upon Abstractions. Do not depend upon concretions.}}, \\Martin, Robert C.
+
+    \begin{itemize}
+        \item Extrair quando pacote foi usado pela última vez
+        \item Comando stat
+        \item Popularity-contest
+    \end{itemize}
+
 \end{frame}
 
 \begin{frame}
-    
-\begin{Parallel}[v]{5cm}{5cm}
-    \textbf{Principles:}
-    \ParallelLText%
-    {
-
-        High-level modules should not depend on low-level modules. Both should depend on abstractions.
-    }
-    \ParallelRText%
-    {
-
-        Abstractions should not depend on details. Details should depend on abstractions.
-    }
-\end{Parallel}  
-
-\end{frame}
-\begin{frame}
-
-\begin{figure}[!htb]
+\begin{figure}[h!]
     \centering
-    \includegraphics[scale=0.5]{SOLID-D}
-    \caption{Analizo - Dependency Inversion Principle}
+    \includegraphics[width=1\textwidth]{figura/comando_stat.eps}
+    \caption{Saída do comando stat para um dado software}
 \end{figure}
 \end{frame}
 
+\begin{frame}
+
+Fórmula usada para gerar um valor de contexto temporal para um dado pacote:
+\newline
+\newline
+ClassificaçãoTempo = $\frac{TempoAcesso - TempoModificação}{TempoAtual -
+TempoModificação}$
+
+\end{frame}
+
+
+\begin{frame}
+    Restrição quanto ao sistema de arquivo
+
+    \begin{itemize}
+        \item noatime
+        \item stricatime
+        \item relatime
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+
+    \begin{itemize}
+        \item Pacotes usados sem intervenção direta do usuário
+            \begin{itemize}
+                \item Retirada de pacotes com prioridade \textit{Required},
+                      \textit{Important} e \textit{Standard}.
+            \end{itemize}
+        \item Flag relatime não apresenta valores exatos
+    \end{itemize}
+
+\end{frame}
+
 % section d (end)
-\section{SOLID for our code} % (fold)
+\section{Estratégia determinística} % (fold)
 \label{sec:our_code}
 
 \begin{frame}
@@ -169,3 +213,170 @@ Using SOLID for points of improvement in our code, wih priority to:
 \caption{Analizo - Refactoring Clang Extractor}
 \end{figure}
 \end{frame}
+
+\section{Estratégia determinística} % (fold)
+\label{sec:estrategia_deterministica}
+
+\section{Aprendizado de máquina} % (fold)
+
+\begin{frame}
+
+    \begin{itemize}
+        \item Estratégia de pós-filtragem
+        \item Rótulos do pacote
+        \item Formatação dos dados
+        \item Estratégia de aprendizado
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+    Rótulos do pacote:
+    \newline
+    \newline
+
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{cc}
+    \hline
+    \rowcolor[HTML]{EFEFEF}
+    {Escala} & {Valores} \\ \hline
+    {Excelent(EX)}  & ClassificaçãoTempo >= 0.8                  \\ \hline
+    {Great(G)}   & ClassificaçãoTempo >= 0.7                  \\ \hline
+    {Medium(M)}   & ClassificaçãoTempo >= 0.5                  \\ \hline
+    {Bad(B)}   & ClassificaçãoTempo >= 0.3                  \\ \hline
+    {Horrible(H)}   &ClassificaçãoTempo < 0.3                   \\ \hline
+    \end{tabular}
+    \caption{Escala para classificação de um pacote baseado em seus atributos de tempo}
+    \label{tab:classificacao_pacotes}
+    \end{table}
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{itemize}
+        \item Vetores binários para representar um pacote
+        \item Debtags e descrição do pacote
+        \item Termos usados apenas dos pacotes manualmente instalados pelo
+              usuário
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+
+    \begin{itemize}
+        \item Bayes ingênuo
+        \item Uso da probabilidade de bayes
+        \item Distribuição de Bernoulli
+        \item Dependência entre variáveis não levada em conta
+        \item Linearização do método
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+    Fórmula adotada para o bayes ingênuo:
+    \newline
+    \newline
+    $Classificador = max(p(C_{y})*\prod_{i=1}^{N}p(x_{i}|C_{y}))$
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{itemize}
+        \item Validação cruzada
+        \item Curvas de Aprendizado
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figura/curva_aprendizado.eps}
+  \caption{Exemplo de uma curva de aprendizado}
+  \label{fig:curva_aprendizado}
+\end{figure}
+
+\end{frame}
+
+
+\label{sec:aprendizado_maquina}
+
+\section{Comparação dos resultados} % (fold)
+\label{sec:comparacao_resultados}
+
+\begin{frame}
+    \begin{itemize}
+        \item Comparação baseadas no \textit{AppRecommender}
+        \item Foco em precisão e novidade das recomendações
+        \item Comparação \textit{offline}
+        \item Teste com usuário
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figura/curva_roc.eps}
+  \caption{Exemplo de curva ROC}
+  \label{fig:curva_roc}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+
+    \begin{itemize}
+        \item Usuário será apresentado a 5 recomendações de cada vez
+        \item 4 estratégias distintas
+        \item 20 recomendações de pacotes no total
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+ \begin{itemize}
+    \item \textbf{Ruim: } Recomendação que não agrada ao usuário.
+    \item \textbf{Redundante: } Usuário possui aplicativos similares para o item
+        sendo recomendado.
+    \item \textbf{Útil: } Usuário acha que a recomendação lhe proporciona um
+            pacote útil.
+    \item \textbf{Surpresa boa: } Usuário considera a recomendação útil e além
+        do mais inesperada.
+\end{itemize}
+   
+
+\end{frame}
+
+\begin{frame}
+    
+\begin{itemize}
+    \item \textbf{Precisão: } $\frac{VerdadeirosPositivos}{VerdadeirosPositivos
+        + FalsoNegativos}$
+    \item \textbf{Novidade: } $\frac{NumSurpresaBoa}{VerdadeirosPositivos +
+        FalsoNegativos}$
+\end{itemize}
+
+Onde:
+
+    \begin{itemize}
+        \item VerdadeirosPositivos: Útil e Surpresa boa
+        \item FalsoNegativos: Ruim e Redundante
+    \end{itemize}
+
+\end{frame}
+
+\section{Resultados parciais} % (fold)
+\label{sec:resultados_parciais}
+
+\section{Obrigado!}
+\label{sec:obrigado}
+
+
