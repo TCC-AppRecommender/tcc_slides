@@ -1,31 +1,33 @@
 \section{Contextualização} % (fold)
 \label{sec:contextualizacao}
 
+\begin{frame}
+    Sistemas com vários itens ou serviços utilizam sistemas
+de recomedação. Exemplo:
+    \begin{itemize}
+        \item Netflix
+        \item Amazon
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item O Debian possui mais de 49 mil pacotes
+        \item A recomendação de pacotes pode ajudar o usuário
+        na realização de suas atividades
+    \end{itemize}
+\end{frame}
+
 % section what_is_solid_ (end)
 
 \section{Problemática} % (fold)
 \label{sec:problematica}
 
 \begin{frame}
-	\say{\textit{Every class should have responsibility over a single part of the functionality
-  provided by the software, and that responsibility should be entirely encapsulated by the
-  class.}}, \\DeMarco, Tom
-\end{frame}
-
-\begin{frame}
-  \begin{figure}[p]
-        \centering
-        \includegraphics[width=0.8\textwidth]{doxyparse_pattern.png}
-        \label{fig:Pattern}
-    \end{figure}
-\end{frame}
-
-\begin{frame}
-  \begin{figure}[p]
-        \centering
-        \includegraphics[width=0.8\textwidth]{clang_antipattern.png}
-        \label{fig:antiPattern}
-    \end{figure}
+  \begin{itemize}
+    \item Prover uma recomendação útil para o usuário
+    \item Entender o contexto temporal do uso de pacotes
+  \end{itemize}
 \end{frame}
 
 % section s (end)
@@ -65,7 +67,7 @@
     \includegraphics[width=0.5\textwidth]{conteudo/Extractor}
     \caption{Extractor inherited}
 \end{figure}
-    
+
 \end{frame}
 % subsection use_in_analizo (end)
 
@@ -87,7 +89,7 @@ usuário}},\\(MAHMOOD; RICCI, 2009)
     \includegraphics[width=1\textwidth]{figura/recommender_model.eps}
   \caption{Modelo para criação de um sistema de recomendação personalizado (PICAULT et al., 2011)}
 \end{figure}
-    
+
 \end{frame}
 
 \begin{frame}
@@ -108,7 +110,7 @@ usuário}},\\(MAHMOOD; RICCI, 2009)
     \includegraphics[width=1\textwidth]{figura/recomendacao_conteudo.eps}
   \caption{Fluxo para construção de um sistema de recomendação por conteúdo (LOPS; GEMMIS; SEMERARO, 2011)}
 \end{figure}
-    
+
 \end{frame}
 
 
@@ -117,24 +119,33 @@ usuário}},\\(MAHMOOD; RICCI, 2009)
 \section{Software escolhido} % (fold)
 \label{sec:software_escolhido}
 \begin{frame}
-	\say {\textit{Client should not be forced to depend on methods it does not use}},\\Martin, Robert(2002)
+\begin{itemize}
+    \item AppRecommender
+
+    \item \say{\textit{dada a lista de programas instalados em determinado sistema,
+          o recomendador retorna uma lista de aplicativos sugeridos, que supostamente
+          são aplicativos de potencial interesse para os usuários daquele sistema}}, \\ARAÚJO, T. C
+\end{itemize}
 \end{frame}
+
 \begin{frame}
-\begin{figure}
-        \centering
-        \begin{minipage}{.5\textwidth}
-            \centering
-            \includegraphics[width=.4\linewidth]{ipossivelerro2.png}
-            \caption{Model was a abstraction class}
-        \end{minipage}%
-        \begin{minipage}{.5\textwidth}
-            \centering
-            \includegraphics[width=.4\linewidth]{improvement2.png}
-            \caption{Possible application of ISP}
-        \end{minipage}
-    \end{figure}
+    Perfil de Usuário
+
+\begin{itemize}
+    \item Lista de termos mais significativos para o usuário
+    \item Um termo pode ser uma debtag ou um
+    \item Uma estratégia de recomendação seleciona esses termos
+\end{itemize}
 \end{frame}
-% section i (end)
+
+\begin{frame}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figura/app_recommender_process.eps}
+  \caption{Processo do AppRecommender}
+  \label{fig:curva_aprendizado}
+\end{figure}
+\end{frame}
 
 \section{Contexto temporal no Debian} % (fold)
 \label{sec:d}
@@ -193,29 +204,45 @@ TempoModificação}$
 
 % section d (end)
 \section{Estratégia determinística} % (fold)
-\label{sec:our_code}
+\label{sec:estrategia_deterministica}
 
 \begin{frame}
-
-Using SOLID for points of improvement in our code, wih priority to:
-\begin{itemize} 
-\setlength{\leftmargini}{2.5em}
-\item     Single-responsiblity principle
-\item     Open-closed principle 
-\item     Dependency Inversion Principle
+\begin{itemize}
+    \item Utiliza do mesmo processo do AppRecommender
+    \item Modifica o cálculo do peso dos pacotes em uma estratégia
+    baseada em conteúdo
+    \item O peso do pacote é resultado do produto do TFIDF com o
+    Peso Temporal do pacote
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\begin{figure}[!htb]
-\centering
-\includegraphics[scale=0.5]{SOLID_ANALIZO}
-\caption{Analizo - Refactoring Clang Extractor}
-\end{figure}
+\begin{itemize}
+    \item O peso de um termo é calculado pela média aritimética dos cinco
+pacotes com maiores pesos que estão associados
+ao termo.
+    \item Caso o termo possua menos de 5 pacotes os valores faltantes são
+preenchidos pelo peso anterior com um decréscimo de 0.05
+\end{itemize}
 \end{frame}
 
-\section{Estratégia determinística} % (fold)
-\label{sec:estrategia_deterministica}
+\begin{frame}
+\begin{itemize}
+    \item \textbf{PesoPacote} = C / $\exp\left(-({1 - ClassificaçãoTempo}) * {\lambda}\right)$
+    \item Onde C e ${\lambda}$ são constantes usadas para alterar a velocidade do
+decaimento da curva e o peso dado a variável \textit{ClassificaçãoTempo}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+    $ValorTemporalDoTermo = \frac{1}{5} * \sum\limits_{i=1}^{5} [Peso Dos Pacotes Ordenados]$
+\end{frame}
+
+\begin{frame}
+    $PesoDoTermo = TFIDF * ValorTemporalDoTermo$
+\end{frame}
+
+% section d (end)
 
 \section{Aprendizado de máquina} % (fold)
 
@@ -351,12 +378,12 @@ Using SOLID for points of improvement in our code, wih priority to:
     \item \textbf{Surpresa boa: } Usuário considera a recomendação útil e além
         do mais inesperada.
 \end{itemize}
-   
+
 
 \end{frame}
 
 \begin{frame}
-    
+
 \begin{itemize}
     \item \textbf{Precisão: } $\frac{VerdadeirosPositivos}{VerdadeirosPositivos
         + FalsoNegativos}$
