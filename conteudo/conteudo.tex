@@ -379,6 +379,17 @@ decaimento da curva e o peso dado a variável \textit{ClassificaçãoTempo}.
     \newline
     $Classificador = max(p(C_{y})*\prod_{i=1}^{N}p(x_{i}|C_{y}))$
 
+
+    \begin{itemize}
+        \item $NR$: Número total de rótulos
+        \item $NC_{y}$: Número total de rótulos $C_{y}$
+        \item $C_{y}$: Possível rótulo do pacote
+        \item $p(C_{y})$: $NC_{y}/NR$
+        \item $Nx_{i}C_{y}$: Número de vezes que $x_{i}$ esta presente em $C_{y}$
+        \item $p(x_{i}|C_{y})$: $Nx_{i}C_{y}/NC_{y}$
+    \end{itemize}
+
+
 \end{frame}
 
 \begin{frame}
@@ -413,6 +424,7 @@ decaimento da curva e o peso dado a variável \textit{ClassificaçãoTempo}.
         \item Foco em precisão e novidade das recomendações
         \item Comparação \textit{offline}
         \item Teste com usuário
+        \item Coleta de dados para comparação \textit{offline}
     \end{itemize}
 \end{frame}
 
