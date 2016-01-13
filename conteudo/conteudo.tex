@@ -160,6 +160,15 @@ usuário}},\\(MAHMOOD; RICCI, 2009)
 \end{frame}
 
 \begin{frame}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{figura/app_recommender_process.eps}
+  \caption{Processo do AppRecommender}
+  \label{fig:curva_aprendizado}
+\end{figure}
+\end{frame}
+
+\begin{frame}
     Perfil de Usuário
     \begin{itemize}
         \item Lista de termos mais significativos para o usuário
@@ -182,15 +191,6 @@ usuário}},\\(MAHMOOD; RICCI, 2009)
     \caption{Exemplo de termos e perfil do usuário}
     \label{tab:classificacao_pacotes}
     \end{table}
-\end{frame}
-
-\begin{frame}
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.9\textwidth]{figura/app_recommender_process.eps}
-  \caption{Processo do AppRecommender}
-  \label{fig:curva_aprendizado}
-\end{figure}
 \end{frame}
 
 \section{Contexto temporal no Debian} % (fold)
@@ -263,6 +263,13 @@ TempoModificação}$
 
 \begin{frame}
 \begin{itemize}
+    \item Usar uma fórmula para criação do perfil de usuário utilizando
+    o contexto temporal
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
     \item Modifica o cálculo do peso dos pacotes em uma estratégia
     baseada em conteúdo
     \item O peso do pacote é resultado do produto do TFIDF com o
@@ -295,7 +302,7 @@ curva que trata o peso do pacote.
 
 \begin{frame}
 \begin{itemize}
-    \item \textbf{PesoPacote} = C / $\exp\left(-({1 - ClassificaçãoTempo}) * {\lambda}\right)$
+    \item \textbf{PesoPacote} = $\frac{C}{\exp\left(({ClassificaçãoTempo - 1}) * {\lambda}\right)}$
     \item Onde C e ${\lambda}$ são constantes usadas para alterar a velocidade do
 decaimento da curva e o peso dado a variável \textit{ClassificaçãoTempo}.
 \end{itemize}
@@ -315,6 +322,27 @@ ao termo.
     \hline
     \rowcolor[HTML]{EFEFEF}
     {vim} & {nano} & {git} & {gedit} & {python} & {inkscape} \\ \hline
+    {5} & {2} & {4} & {3} & {2} & {1} \\ \hline
+    \end{tabular}
+    \caption{Exemplo de peso dos pacotes}
+    \label{tab:classificacao_pacotes}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item O peso de um termo é calculado pela média aritimética dos cinco
+pacotes com maiores pesos que estão associados
+ao termo.
+        \item Termo: role::program
+        \item Pacotes: vim, nano, git, gedit, python, inkscape
+    \end{itemize}
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{cccccc}
+    \hline
+    \rowcolor[HTML]{EFEFEF}
+    {\textcolor{red}{vim}} & {\textcolor{red}{nano}} & {\textcolor{red}{git}} & {\textcolor{red}{gedit}} & {\textcolor{red}{python}} & {inkscape} \\ \hline
     {5} & {2} & {4} & {3} & {2} & {1} \\ \hline
     \end{tabular}
     \caption{Exemplo de peso dos pacotes}
