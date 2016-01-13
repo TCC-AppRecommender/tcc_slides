@@ -25,8 +25,8 @@ de recomedação. Exemplo:
 
 \begin{frame}
   \begin{itemize}
-    \item Prover uma recomendação útil para o usuário
-    \item Entender o contexto temporal do uso de pacotes
+    \item Melhorar um sistema de recomendação
+    \item Utilizar o contexto temporal
   \end{itemize}
 \end{frame}
 
@@ -36,41 +36,12 @@ de recomedação. Exemplo:
 \label{sec:objetivo}
 
 \begin{frame}
-	\say{\textit{Software entities should be open for extension, but closed for modification.}}, \\Meyer, Bertrand
+  \begin{itemize}
+    \item Utilizar o contexto temporal para criar recomendações
+    \item Estratégia determinística
+    \item Aprendizado de máquina
+  \end{itemize}
 \end{frame}
-
-\begin{frame}
-
-
-\begin{Parallel}[v]{5cm}{5cm}
-    \ParallelLText%
-    {
-    	\textbf{Bertrand Meyer, 1988}
-
-    	The idea was that once completed, the implementation of a class could only be modified to correct errors.
-    }
-    \ParallelRText%
-    {
-    	\textbf{1990s}
-
-    	The implementations can be changed and multiple implementations could be created and polymorphically substituted for each other.
-	}
-\end{Parallel}
-
-\end{frame}
-
-\begin{frame}
-
-\begin{figure}[h!]
-  % \caption{The Extractor inherited.}
-  \centering
-    \includegraphics[width=0.5\textwidth]{conteudo/Extractor}
-    \caption{Extractor inherited}
-\end{figure}
-
-\end{frame}
-% subsection use_in_analizo (end)
-
 
 % section o (end)
 
@@ -190,12 +161,27 @@ usuário}},\\(MAHMOOD; RICCI, 2009)
 
 \begin{frame}
     Perfil de Usuário
+    \begin{itemize}
+        \item Lista de termos mais significativos para o usuário
+        \item Uma estratégia de recomendação é responsável por definir quais termos
+        são usados no perfil do usuário
+    \end{itemize}
 
-\begin{itemize}
-    \item Lista de termos mais significativos para o usuário
-    \item Um termo pode ser uma debtag ou um
-    \item Uma estratégia de recomendação seleciona esses termos
-\end{itemize}
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{cc}
+    \hline
+    \rowcolor[HTML]{EFEFEF}
+    {Termos} & {Perfil do usuário} \\ \hline
+    {devel::editor} & {devel::editor} \\ \hline
+    {implemented-in::c} & {role::program} \\ \hline
+    {role::program} & {} \\ \hline
+    {interface::commandline} & {} \\ \hline
+    {interface::text-mode} & {} \\ \hline
+    \end{tabular}
+    \caption{Exemplo de termos e perfil do usuário}
+    \label{tab:classificacao_pacotes}
+    \end{table}
 \end{frame}
 
 \begin{frame}
@@ -277,7 +263,6 @@ TempoModificação}$
 
 \begin{frame}
 \begin{itemize}
-    \item Utiliza do mesmo processo do AppRecommender
     \item Modifica o cálculo do peso dos pacotes em uma estratégia
     baseada em conteúdo
     \item O peso do pacote é resultado do produto do TFIDF com o
@@ -286,13 +271,26 @@ TempoModificação}$
 \end{frame}
 
 \begin{frame}
-\begin{itemize}
-    \item O peso de um termo é calculado pela média aritimética dos cinco
-pacotes com maiores pesos que estão associados
-ao termo.
-    \item Caso o termo possua menos de 5 pacotes os valores faltantes são
-preenchidos pelo peso anterior com um decréscimo de 0.05
-\end{itemize}
+    Cada termo possui pacotes associados a ele:
+    \begin{itemize}
+        \item termo: role::program
+        \item pacotes associados: vim, nano, git, gedit, python, inkscape
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Cada pacote possui um valor pela classificação temporal.
+        \item Utilza-se do decaímento exponencial para controlar a suavidade da
+curva que trata o peso do pacote.
+    \end{itemize}
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.9\textwidth]{figura/decaimento_exponencial.eps}
+      \caption{Exemplo de um decaímento exponencial}
+      \label{fig:curva_aprendizado}
+    \end{figure}
 \end{frame}
 
 \begin{frame}
@@ -304,11 +302,123 @@ decaimento da curva e o peso dado a variável \textit{ClassificaçãoTempo}.
 \end{frame}
 
 \begin{frame}
-    $ValorTemporalDoTermo = \frac{1}{5} * \sum\limits_{i=1}^{5} [Peso Dos Pacotes Ordenados]$
+    \begin{itemize}
+        \item O peso de um termo é calculado pela média aritimética dos cinco
+pacotes com maiores pesos que estão associados
+ao termo.
+        \item Termo: role::program
+        \item Pacotes: vim, nano, git, gedit, python, inkscape
+    \end{itemize}
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{cccccc}
+    \hline
+    \rowcolor[HTML]{EFEFEF}
+    {vim} & {nano} & {git} & {gedit} & {python} & {inkscape} \\ \hline
+    {5} & {2} & {4} & {3} & {2} & {1} \\ \hline
+    \end{tabular}
+    \caption{Exemplo de peso dos pacotes}
+    \label{tab:classificacao_pacotes}
+    \end{table}
 \end{frame}
 
 \begin{frame}
+    \begin{itemize}
+        \item O valor temporal de um termo é calculado pela média aritimética dos cinco
+pacotes com maiores pesos que estão associados
+ao termo.
+        \item Termo: role::program
+        \item Pacotes: vim, nano, git, gedit, python, inkscape
+    \end{itemize}
+
+    $ValorTemporalDoTermo = \frac{5 + 4 + 3 + 2 + 2}{5}$
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item O valor temporal de um termo é calculado pela média aritimética dos cinco
+pacotes com maiores pesos que estão associados
+ao termo.
+        \item Termo: role::program
+        \item Pacotes: vim, nano, git, gedit, python, inkscape
+    \end{itemize}
+
+    $ValorTemporalDoTermo = 3.2$
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item O valor temporal de um termo é calculado pela média aritimética dos cinco
+pacotes com maiores pesos que estão associados
+ao termo.
+        \item Termo: role::program
+        \item Pacotes: vim, nano, git, gedit, python, inkscape
+    \end{itemize}
+
+    $ValorTemporalDoTermo = 3.2$
     $PesoDoTermo = TFIDF * ValorTemporalDoTermo$
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Caso o termo possua menos de 5 pacotes os valores faltantes são
+    preenchidos pelo peso anterior com um decréscimo de 0.05
+        \item Termo: role::program
+        \item Pacotes: vim, nano
+    \end{itemize}
+
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{cccccc}
+    \hline
+    \rowcolor[HTML]{EFEFEF}
+    {vim} & {nano} & {X} & {X} & {X} \\ \hline
+    {5.0} & {2.0} & {1.95} & {1.90} & {1.85} \\ \hline
+    \end{tabular}
+    \caption{Exemplo de peso dos pacotes}
+    \label{tab:classificacao_pacotes}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Caso o termo possua menos de 5 pacotes os valores faltantes são
+    preenchidos pelo peso anterior com um decréscimo de 0.05
+        \item Termo: role::program
+        \item Pacotes: vim, nano
+    \end{itemize}
+
+    $ValorTemporalDoTermo = \frac{5.0 + 2.0 + 1.95 + 1.90 + 1.85}{5}$
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Caso o termo possua menos de 5 pacotes os valores faltantes são
+    preenchidos pelo peso anterior com um decréscimo de 0.05
+        \item Termo: role::program
+        \item Pacotes: vim, nano
+    \end{itemize}
+
+    $ValorTemporalDoTermo = 2.54$
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Caso o termo possua menos de 5 pacotes os valores faltantes são
+    preenchidos pelo peso anterior com um decréscimo de 0.05
+        \item Termo: role::program
+        \item Pacotes: vim, nano
+    \end{itemize}
+
+    $ValorTemporalDoTermo = 2.54$
+
+    $PesoDoTermo = TFIDF * ValorTemporalDoTermo$
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Os termos com os maiores pesos se tornam o perfil do usuário
+    \end{itemize}
 \end{frame}
 
 % section d (end)
@@ -492,6 +602,17 @@ Onde:
 
 \section{Resultados parciais} % (fold)
 \label{sec:resultados_parciais}
+
+\begin{frame}
+\begin{itemize}
+    \item AppRecommender
+    \item Coleta das informações temporais dos pacotes
+    \item Estratégia determinística
+    \item Aprendizado de máquina: A técnica está implementada.
+    Coleta de dados dos pacotes, extrair seus atributos e classificá-los.
+    \item Coleta de dados dos usuários
+\end{itemize}
+\end{frame}
 
 \section{Obrigado!}
 \label{sec:obrigado}
