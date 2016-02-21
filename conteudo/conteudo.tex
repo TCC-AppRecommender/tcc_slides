@@ -225,11 +225,105 @@ usuário}},\\(MAHMOOD; RICCI, 2009)
 
 \begin{frame}
 
-Fórmula usada para gerar um valor de contexto temporal para um dado pacote:
-\newline
-\newline
-ClassificaçãoTempo = $\frac{TempoAcesso - TempoModificação}{TempoAtual -
-TempoModificação}$
+    Atributos utilizados para se classificar um pacote através
+    de um contexto temporal:
+
+    \begin{itemize}
+        \item \textbf{Tempo de Acesso:} Tempo de último acesso do pacote
+        em segundos.
+
+        \item \textbf{Tempo de Modificação:} Tempo de última modificação
+        do pacote em segundos.
+
+        \item \textbf{Tempo Atual:} Tempo atual no qual o usuário executa
+        a aplicação.
+    \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+
+    Através desses três atributos um pacote é clássificado analisando
+a seguinte relação
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.9\textwidth]{figura/barra_temporal_01.eps}
+      \caption{Classificação de um pacote no tempo}
+      \label{fig:barra_temporal}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+
+    Quanto mais o Tempo de Acesso estiver próximo do Tempo Atual
+melhor será a classificação de um pacote.
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.9\textwidth]{figura/barra_temporal_02.eps}
+      \caption{Classificação de um pacote no tempo}
+      \label{fig:barra_temporal}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+
+    Quanto mais o Tempo de Acesso estiver próximo do Tempo de Modificação
+pior será a classificação de um pacote.
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.9\textwidth]{figura/barra_temporal_03.eps}
+      \caption{Classificação de um pacote no tempo}
+      \label{fig:barra_temporal}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.9\textwidth]{figura/barra_temporal_04.eps}
+      \caption{Classificação de um pacote no tempo}
+      \label{fig:barra_temporal}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+
+    As imagens que demonstram a classificação temporal de um pacote
+podem ser representada através da seguinte fórmula
+    \newline
+    \newline
+    ClassificaçãoTemporal = $\frac{TempoAcesso - TempoModificação}{TempoAtual -
+    TempoModificação}$
+
+\end{frame}
+
+
+\begin{frame}
+
+    As imagens que demonstram a classificação temporal de um pacote
+podem ser representada através da seguinte fórmula
+    \newline
+    \newline
+    ClassificaçãoTemporal = $\frac{TempoAcesso - TempoModificação}{TempoAtual -
+    TempoModificação}$
+    \newline
+    \newline
+    Onde a classificação temporal de um pacote resulta em um valor
+no intervalo de 0.0 a 1.0
+
+    Quanto mais o resultado chegar perto do valor 1.0 melhor
+é a classificação do pacote
 
 \end{frame}
 
@@ -302,9 +396,9 @@ curva que trata o peso do pacote.
 
 \begin{frame}
 \begin{itemize}
-    \item \textbf{PesoPacote} = $\frac{C}{\exp\left(({ClassificaçãoTempo - 1}) * {\lambda}\right)}$
+    \item \textbf{PesoPacote} = $\frac{C}{\exp\left(({ClassificaçãoTemporal - 1}) * {\lambda}\right)}$
     \item Onde C e ${\lambda}$ são constantes usadas para alterar a velocidade do
-decaimento da curva e o peso dado a variável \textit{ClassificaçãoTempo}.
+decaimento da curva e o peso dado a variável \textit{ClassificaçãoTemporal}.
 \end{itemize}
 \end{frame}
 
@@ -476,11 +570,11 @@ ao termo.
     \hline
     \rowcolor[HTML]{EFEFEF}
     {Escala} & {Valores} \\ \hline
-    {Excelent(EX)}  & ClassificaçãoTempo >= 0.8                  \\ \hline
-    {Great(G)}   & ClassificaçãoTempo >= 0.7                  \\ \hline
-    {Medium(M)}   & ClassificaçãoTempo >= 0.5                  \\ \hline
-    {Bad(B)}   & ClassificaçãoTempo >= 0.3                  \\ \hline
-    {Horrible(H)}   &ClassificaçãoTempo < 0.3                   \\ \hline
+    {Excelent(EX)}  & ClassificaçãoTemporal >= 0.8                  \\ \hline
+    {Great(G)}   & ClassificaçãoTemporal >= 0.7                  \\ \hline
+    {Medium(M)}   & ClassificaçãoTemporal >= 0.5                  \\ \hline
+    {Bad(B)}   & ClassificaçãoTemporal >= 0.3                  \\ \hline
+    {Horrible(H)}   &ClassificaçãoTemporal < 0.3                   \\ \hline
     \end{tabular}
     \caption{Escala para classificação de um pacote baseado em seus atributos de tempo}
     \label{tab:classificacao_pacotes}

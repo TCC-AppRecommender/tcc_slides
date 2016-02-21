@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="images_inkscape.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.25"
+     inkscape:cx="3130.0733"
+     inkscape:cy="444.33518"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3865"
+       transform="matrix(0.99931799,0,0,0.99437944,1099.9479,-188.57103)"
+       inkscape:export-filename="/home/luciano/Documents/unb/semestre_10/tcc/tcc_slides/figura/barra_temporal_01.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2985"
+         d="m 34.130483,388.06322 690.455177,0"
+         style="fill:none;stroke:#000000;stroke-width:5.49357986;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987"
+         d="m 34.33744,333.23198 0,109.66248"
+         style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987-3"
+         d="m 724.3787,333.23198 0,109.66248"
+         style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987-6"
+         d="m 382.83249,333.23198 0,109.66248"
+         style="fill:none;stroke:#ff0000;stroke-width:9.45199108;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3793"
+         y="502.36218"
+         x="382.7153"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="502.36218"
+           x="382.7153"
+           id="tspan3795"
+           sodipodi:role="line">Tempo</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3797"
+           y="552.36218"
+           x="382.7153"
+           sodipodi:role="line">de</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3799"
+           y="602.36218"
+           x="382.7153"
+           sodipodi:role="line">Acesso</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3793-6"
+         y="502.36218"
+         x="38.882812"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="502.36218"
+           x="38.882812"
+           id="tspan3795-7"
+           sodipodi:role="line">Tempo</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3797-4"
+           y="552.36218"
+           x="38.882812"
+           sodipodi:role="line">de</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3799-7"
+           y="602.36218"
+           x="38.882812"
+           sodipodi:role="line">Modificação</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3793-2"
+         y="502.36218"
+         x="730.88281"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="502.36218"
+           x="730.88281"
+           id="tspan3795-5"
+           sodipodi:role="line">Tempo</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3799-6"
+           y="552.36218"
+           x="730.88281"
+           sodipodi:role="line">Atual</tspan></text>
+    </g>
+    <g
+       id="g3865-0"
+       transform="matrix(0.99931799,0,0,0.99437944,1099.9479,232.1608)"
+       inkscape:export-filename="/home/luciano/Documents/unb/semestre_10/tcc/tcc_slides/figura/barra_temporal_02.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2985-8"
+         d="m 34.130483,388.06322 690.455177,0"
+         style="fill:none;stroke:#000000;stroke-width:5.49357986;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987-1"
+         d="m 34.33744,333.23198 0,109.66248"
+         style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987-3-2"
+         d="m 724.3787,333.23198 0,109.66248"
+         style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987-6-1"
+         d="m 580.96713,333.23198 0,109.66248"
+         style="fill:none;stroke:#ff0000;stroke-width:9.45199108;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3793-64"
+         y="502.36218"
+         x="508.69424"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="502.36218"
+           x="508.69424"
+           id="tspan3795-9"
+           sodipodi:role="line">Tempo</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3797-48"
+           y="552.36218"
+           x="508.69424"
+           sodipodi:role="line">de</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3799-4"
+           y="602.36218"
+           x="508.69424"
+           sodipodi:role="line">Acesso</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3793-6-6"
+         y="502.36218"
+         x="38.882812"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="502.36218"
+           x="38.882812"
+           id="tspan3795-7-1"
+           sodipodi:role="line">Tempo</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3797-4-0"
+           y="552.36218"
+           x="38.882812"
+           sodipodi:role="line">de</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3799-7-2"
+           y="602.36218"
+           x="38.882812"
+           sodipodi:role="line">Modificação</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3793-2-5"
+         y="502.36218"
+         x="730.88281"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="502.36218"
+           x="730.88281"
+           id="tspan3795-5-3"
+           sodipodi:role="line">Tempo</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3799-6-6"
+           y="552.36218"
+           x="730.88281"
+           sodipodi:role="line">Atual</tspan></text>
+    </g>
+    <g
+       id="g3865-5"
+       transform="matrix(0.99931799,0,0,0.99437944,1099.9479,669.33655)"
+       inkscape:export-filename="/home/luciano/Documents/unb/semestre_10/tcc/tcc_slides/figura/barra_temporal_03.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2985-3"
+         d="m 34.130483,388.06322 690.455177,0"
+         style="fill:none;stroke:#000000;stroke-width:5.49357986;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987-7"
+         d="m 34.33744,333.23198 0,109.66248"
+         style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987-3-1"
+         d="m 724.3787,333.23198 0,109.66248"
+         style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987-6-0"
+         d="m 208.71417,333.23198 0,109.66248"
+         style="fill:none;stroke:#ff0000;stroke-width:9.45199108;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3793-68"
+         y="502.36218"
+         x="282.84238"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="502.36218"
+           x="282.84238"
+           id="tspan3795-4"
+           sodipodi:role="line">Tempo</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3797-3"
+           y="552.36218"
+           x="282.84238"
+           sodipodi:role="line">de</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3799-0"
+           y="602.36218"
+           x="282.84238"
+           sodipodi:role="line">Acesso</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3793-6-1"
+         y="502.36218"
+         x="38.882812"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="502.36218"
+           x="38.882812"
+           id="tspan3795-7-4"
+           sodipodi:role="line">Tempo</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3797-4-8"
+           y="552.36218"
+           x="38.882812"
+           sodipodi:role="line">de</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3799-7-4"
+           y="602.36218"
+           x="38.882812"
+           sodipodi:role="line">Modificação</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3793-2-2"
+         y="502.36218"
+         x="730.88281"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle"
+           y="502.36218"
+           x="730.88281"
+           id="tspan3795-5-9"
+           sodipodi:role="line">Tempo</tspan><tspan
+           style="text-align:center;text-anchor:middle"
+           id="tspan3799-6-8"
+           y="552.36218"
+           x="730.88281"
+           sodipodi:role="line">Atual</tspan></text>
+    </g>
+    <g
+       id="g4232"
+       inkscape:export-filename="/home/luciano/Documents/unb/semestre_10/tcc/tcc_slides/figura/barra_temporal_04.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/luciano/Documents/unb/semestre_10/tcc/tcc_slides/figura/barra_temporal_01.png"
+         transform="matrix(0.99931799,0,0,0.99437944,3519.0536,50.25687)"
+         id="g3865-6">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:5.49357986;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 34.130483,388.06322 690.455177,0"
+           id="path2985-82"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 34.33744,333.23198 0,109.66248"
+           id="path2987-5"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 724.3787,333.23198 0,109.66248"
+           id="path2987-3-20"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:9.45199108;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 382.83249,333.23198 0,109.66248"
+           id="path2987-6-11"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+           x="382.7153"
+           y="502.36218"
+           id="text3793-3"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3795-1"
+             x="382.7153"
+             y="502.36218"
+             style="text-align:center;text-anchor:middle">Tempo</tspan><tspan
+             sodipodi:role="line"
+             x="382.7153"
+             y="552.36218"
+             id="tspan3797-31"
+             style="text-align:center;text-anchor:middle">de</tspan><tspan
+             sodipodi:role="line"
+             x="382.7153"
+             y="602.36218"
+             id="tspan3799-41"
+             style="text-align:center;text-anchor:middle">Acesso</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+           x="38.882812"
+           y="502.36218"
+           id="text3793-6-60"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3795-7-9"
+             x="38.882812"
+             y="502.36218"
+             style="text-align:center;text-anchor:middle">Tempo</tspan><tspan
+             sodipodi:role="line"
+             x="38.882812"
+             y="552.36218"
+             id="tspan3797-4-7"
+             style="text-align:center;text-anchor:middle">de</tspan><tspan
+             sodipodi:role="line"
+             x="38.882812"
+             y="602.36218"
+             id="tspan3799-7-0"
+             style="text-align:center;text-anchor:middle">Modificação</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+           x="730.88281"
+           y="502.36218"
+           id="text3793-2-57"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3795-5-6"
+             x="730.88281"
+             y="502.36218"
+             style="text-align:center;text-anchor:middle">Tempo</tspan><tspan
+             sodipodi:role="line"
+             x="730.88281"
+             y="552.36218"
+             id="tspan3799-6-0"
+             style="text-align:center;text-anchor:middle">Atual</tspan></text>
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/luciano/Documents/unb/semestre_10/tcc/tcc_slides/figura/barra_temporal_02.png"
+         transform="matrix(0.99931799,0,0,0.99437944,3519.0536,-279.74324)"
+         id="g3865-0-9">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:5.49357986;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 34.130483,388.06322 690.455177,0"
+           id="path2985-8-9"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 34.33744,333.23198 0,109.66248"
+           id="path2987-1-4"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 724.3787,333.23198 0,109.66248"
+           id="path2987-3-2-9"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:9.45199108;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 580.96713,333.23198 0,109.66248"
+           id="path2987-6-1-3"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+           x="508.69424"
+           y="502.36218"
+           id="text3793-64-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3795-9-1"
+             x="508.69424"
+             y="502.36218"
+             style="text-align:center;text-anchor:middle">Tempo</tspan><tspan
+             sodipodi:role="line"
+             x="508.69424"
+             y="552.36218"
+             id="tspan3797-48-1"
+             style="text-align:center;text-anchor:middle">de</tspan><tspan
+             sodipodi:role="line"
+             x="508.69424"
+             y="602.36218"
+             id="tspan3799-4-4"
+             style="text-align:center;text-anchor:middle">Acesso</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+           x="38.882812"
+           y="502.36218"
+           id="text3793-6-6-9"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3795-7-1-6"
+             x="38.882812"
+             y="502.36218"
+             style="text-align:center;text-anchor:middle">Tempo</tspan><tspan
+             sodipodi:role="line"
+             x="38.882812"
+             y="552.36218"
+             id="tspan3797-4-0-0"
+             style="text-align:center;text-anchor:middle">de</tspan><tspan
+             sodipodi:role="line"
+             x="38.882812"
+             y="602.36218"
+             id="tspan3799-7-2-3"
+             style="text-align:center;text-anchor:middle">Modificação</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+           x="730.88281"
+           y="502.36218"
+           id="text3793-2-5-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3795-5-3-3"
+             x="730.88281"
+             y="502.36218"
+             style="text-align:center;text-anchor:middle">Tempo</tspan><tspan
+             sodipodi:role="line"
+             x="730.88281"
+             y="552.36218"
+             id="tspan3799-6-6-4"
+             style="text-align:center;text-anchor:middle">Atual</tspan></text>
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/luciano/Documents/unb/semestre_10/tcc/tcc_slides/figura/barra_temporal_03.png"
+         transform="matrix(0.99931799,0,0,0.99437944,3519.0536,380.25698)"
+         id="g3865-5-2">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:5.49357986;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 34.130483,388.06322 690.455177,0"
+           id="path2985-3-5"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 34.33744,333.23198 0,109.66248"
+           id="path2987-7-0"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:5.90749454;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 724.3787,333.23198 0,109.66248"
+           id="path2987-3-1-3"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:9.45199108;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 208.71417,333.23198 0,109.66248"
+           id="path2987-6-0-1"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+           x="282.84238"
+           y="502.36218"
+           id="text3793-68-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3795-4-1"
+             x="282.84238"
+             y="502.36218"
+             style="text-align:center;text-anchor:middle">Tempo</tspan><tspan
+             sodipodi:role="line"
+             x="282.84238"
+             y="552.36218"
+             id="tspan3797-3-1"
+             style="text-align:center;text-anchor:middle">de</tspan><tspan
+             sodipodi:role="line"
+             x="282.84238"
+             y="602.36218"
+             id="tspan3799-0-2"
+             style="text-align:center;text-anchor:middle">Acesso</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+           x="38.882812"
+           y="502.36218"
+           id="text3793-6-1-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3795-7-4-3"
+             x="38.882812"
+             y="502.36218"
+             style="text-align:center;text-anchor:middle">Tempo</tspan><tspan
+             sodipodi:role="line"
+             x="38.882812"
+             y="552.36218"
+             id="tspan3797-4-8-9"
+             style="text-align:center;text-anchor:middle">de</tspan><tspan
+             sodipodi:role="line"
+             x="38.882812"
+             y="602.36218"
+             id="tspan3799-7-4-8"
+             style="text-align:center;text-anchor:middle">Modificação</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+           x="730.88281"
+           y="502.36218"
+           id="text3793-2-2-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3795-5-9-9"
+             x="730.88281"
+             y="502.36218"
+             style="text-align:center;text-anchor:middle">Tempo</tspan><tspan
+             sodipodi:role="line"
+             x="730.88281"
+             y="552.36218"
+             id="tspan3799-6-8-0"
+             style="text-align:center;text-anchor:middle">Atual</tspan></text>
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4186"
+         y="219.66599"
+         x="3085.772"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="font-size:90px"
+           y="219.66599"
+           x="3085.772"
+           id="tspan4188"
+           sodipodi:role="line">BOM</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4186-0"
+         y="552.25885"
+         x="3085.772"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="font-size:90px"
+           y="552.25885"
+           x="3085.772"
+           id="tspan4188-1"
+           sodipodi:role="line">Médio</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4186-0-7"
+         y="880.45721"
+         x="3085.772"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:LCD Solid;-inkscape-font-specification:LCD Solid"
+         xml:space="preserve"><tspan
+           style="font-size:90px"
+           y="880.45721"
+           x="3085.772"
+           id="tspan4188-1-6"
+           sodipodi:role="line">Ruim</tspan></text>
+    </g>
+  </g>
+</svg>
