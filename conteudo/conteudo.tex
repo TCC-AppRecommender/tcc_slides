@@ -377,15 +377,8 @@ no intervalo de 0.0 a 1.0
 \begin{itemize}
     \item Usar uma fórmula para criação do perfil de usuário utilizando
     o contexto temporal
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\begin{itemize}
     \item Modifica o cálculo do peso dos pacotes em uma estratégia
     baseada em conteúdo
-    \item O peso do pacote é resultado do produto do TFIDF com o
-    Peso Temporal do pacote
 \end{itemize}
 \end{frame}
 
@@ -395,6 +388,37 @@ no intervalo de 0.0 a 1.0
         \item termo: role::program
         \item pacotes associados: vim, nano, git, gedit, python, inkscape
     \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+    \item Lembrando que cada pacote possui uma classificação temporal
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.9\textwidth]{figura/barra_temporal_01.eps}
+      \caption{Classificação de um pacote no tempo}
+      \label{fig:barra_temporal}
+    \end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+    \item Lembrando que cada pacote possui uma classificação temporal
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.9\textwidth]{figura/barra_temporal_01.eps}
+      \caption{Classificação de um pacote no tempo}
+      \label{fig:barra_temporal}
+    \end{figure}
+
+    \item Através da fórmula
+
+    ClassificaçãoTemporal = $\frac{TempoAcesso - TempoModificação}{TempoAtual -
+    TempoModificação}$
+\end{itemize}
 \end{frame}
 
 \begin{frame}
